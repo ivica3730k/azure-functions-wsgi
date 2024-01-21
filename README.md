@@ -30,8 +30,11 @@ This is our static files api function which is used to serve your static files. 
 
 Docker is the easiest way to test http azure functions locally, as it will take care of all the dependencies for you.
 Simply run the provided docker-compose file and your functions will be auto-detected and deployed.
+Docker-compose is set up with a volume, so any changes you make to the code will be automatically reflected in the container.
+
+To run the docker-compose file, simply run `docker-compose up` in the root directory.
 
 ### Using Azure Functions Core Tools
 
-Install the neccessary tools using `npm install -g azure-functions-core-tools@4 --unsafe-perm true` and then run `func start` to start the functions.
+Install the neccessary tools using `npm install -g azure-functions-core-tools@4 --unsafe-perm true` and then run `func host start` to start the functions.
 Make sure you have your python environment activated before running the functions and that you have installed all the dependencies using `pip install -r requirements.txt`.

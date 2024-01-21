@@ -1,8 +1,5 @@
 import os
 import azure.functions as func
-import logging
-logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     # Get the path to the static folder (assuming it's one folder back)
